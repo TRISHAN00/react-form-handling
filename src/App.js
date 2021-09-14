@@ -1,11 +1,11 @@
+import Clock from './component/Clock'
 
-
-function App() {
+function App () {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className='App'>
+      <Clock local='bn-BD' />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
