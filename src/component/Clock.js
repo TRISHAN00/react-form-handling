@@ -1,7 +1,7 @@
 import React from 'react'
 
 class Clock extends React.Component {
-  state = { date: new Date() }
+  state = { date: new Date(), local: 'bn-BD' }
 
   componentDidMount () {
     this.clearInterval = setInterval(() => {
@@ -19,13 +19,20 @@ class Clock extends React.Component {
     })
   }
 
+  handleClicked = () => {
+    this.setState({
+      local: 'en-US'
+    })
+  }
+
   render () {
-    const { date } = this.state
+    const { date, local } = this.state
+
     return (
       <h1 className='heading'>
         <span className='text'>
-          Hello {this.props.children}{' '}
-          {date.toLocaleTimeString(this.props.local)}
+          Hello {this.props.children} {date.toLocaleTimeString(local)}
+          <button onClick={this.handleClicked}>Click Here</button>
         </span>
       </h1>
     )
