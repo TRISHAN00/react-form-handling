@@ -1,9 +1,9 @@
-import Clock from './component/Clock'
+import Form from './component/Form'
 
 function App () {
   return (
     <div className='App'>
-      <Clock local='bn-BD' />
+      <Form />
     </div>
   )
 }
