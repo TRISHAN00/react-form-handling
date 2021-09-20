@@ -6,7 +6,7 @@ import TemperatureInput from './TemperatureInput'
 export default class Calculator extends Component {
   state = {
     temperature: '',
-    scale: 'c'
+    scale: ''
   }
 
   handleTemperatureCahange = (e, scale) => {
