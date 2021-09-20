@@ -1,11 +1,10 @@
-import Form from './component/Form'
+import React from 'react'
+import Calculator from './component/Calculator'
 
-function App () {
+export default function App () {
   return (
-    <div className='App'>
-      <Form />
+    <div>
+      <Calculator />
     </div>
   )
 }
-
-export default App

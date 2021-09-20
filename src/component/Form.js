@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import FormDetails from './FormDetails'
 
 export default class Form extends Component {
   state = {
@@ -64,6 +65,7 @@ export default class Form extends Component {
 
           <br />
           <br />
+
           <input
             required
             name='lastName'
@@ -72,8 +74,10 @@ export default class Form extends Component {
             value={lastName}
             placeholder='write lastname'
           />
+
           <br />
           <br />
+
           <input
             required
             name='age'
@@ -82,8 +86,10 @@ export default class Form extends Component {
             value={age}
             placeholder='age'
           />
+
           <br />
           <br />
+
           <input
             onChange={this.handleOnBlur}
             type='checkbox'
@@ -91,18 +97,29 @@ export default class Form extends Component {
             id='checkbox'
             value={checkbox}
           />
+          <span>Are you agree with term & condition</span>
+
           <br />
           <br />
+
           <select onChange={this.handleOnBlur} name='selectName' value={value}>
             <option value='Select'>Select</option>
             <option value='React'>React</option>
             <option value='Angular'>Angular</option>
             <option value='Vue'>Vue</option>
           </select>
+
           <br />
           <br />
+          
           <input type='submit' value='submit' />
         </form>
+        <FormDetails
+          firstName={firstName}
+          lastName={lastName}
+          age={age}
+          value={value}
+        />
       </div>
     )
   }
