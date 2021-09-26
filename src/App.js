@@ -1,12 +1,5 @@
-import Emoji from './component/inheritance/Emoji'
-import Text from './component/inheritance/Text'
+import ClickCounter from './components/ClickCounter'
 
 export default function App () {
-  return (
-    <Emoji>
-      {({ addEmoji }) => {
-        ;<Text addEmoji={addEmoji} />
-      }}
-    </Emoji>
-  )
+  return <ClickCounter />
 }
