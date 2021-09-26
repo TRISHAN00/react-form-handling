@@ -1,12 +1,9 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 export default class Emoji extends Component {
   addEmoji = (emoji, text) => `${emoji} ${text} ${emoji}`
-  render (decoratedText) {
-    let text = 'I am Javascript Progrmmer'
 
-    if (decoratedText) text = decoratedText
-
-    return <div>{text}</div>
+  render () {
+    return this.props.children({ addEmoji: this.addEmoji })
   }
 }

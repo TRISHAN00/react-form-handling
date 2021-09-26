@@ -1,9 +1,4 @@
-import Emoji from './Emoji'
-
-export default class Text extends Emoji {
-  render () {
-    console.log()
-    const decoratedText = this.addEmoji('emoji', 'text')
-    return super.render(decoratedText)
-  }
+export default function Text ({ addEmoji }) {
+  const text = 'I am Javascript Programmer'
+  return <div>{addEmoji ? addEmoji('emoji', 'text') : text}</div>
 }
