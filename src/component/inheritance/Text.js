@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import Emoji from './Emoji'
 
-export default class Text extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+export default class Text extends Emoji {
+  render () {
+    console.log()
+    const decoratedText = this.addEmoji('emoji', 'text')
+    return super.render(decoratedText)
+  }
 }

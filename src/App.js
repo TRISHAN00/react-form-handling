@@ -1,5 +1,5 @@
-import React from 'react'
-import Emoji from './component/inheritance/Emoji'
+import Text from './component/inheritance/Text'
+
 export default function App () {
-  return <Emoji />
+  return <Text />
 }

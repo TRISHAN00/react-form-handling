@@ -1,15 +1,12 @@
-import { Component } from 'react'
-import Text from './Text'
+import React, { Component } from 'react'
 
 export default class Emoji extends Component {
-  addEmoji = (text, emoji) => `${text} ${emoji} ${text}`
-  render () {
-    let text = 'I am the Emoji Component'
-    return (
-      <div>
-        <h1>{text}</h1>
-        <Text addEmoji={this.addEmoji} />
-      </div>
-    )
+  addEmoji = (emoji, text) => `${emoji} ${text} ${emoji}`
+  render (decoratedText) {
+    let text = 'I am Javascript Progrmmer'
+
+    if (decoratedText) text = decoratedText
+
+    return <div>{text}</div>
   }
 }
