@@ -1,10 +1,5 @@
 import React from 'react'
-import Calculator from './component/Calculator'
-
+import Emoji from './component/inheritance/Emoji'
 export default function App () {
-  return (
-    <div>
-      <Calculator />
-    </div>
-  )
+  return <Emoji />
 }
