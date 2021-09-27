@@ -4,7 +4,7 @@ import withCounter from './HOC/withCounter'
 function HoverCount ({ count, incrementCount }) {
   return (
     <div>
-      <h1 onMouseOver={this.incrementCount}>Hover {count} value</h1>
+      <h1 onMouseOver={incrementCount}>Hover {count} value</h1>
     </div>
   )
 }
