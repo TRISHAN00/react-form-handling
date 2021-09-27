@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class ClickCounter extends Component {
+export default class HoverCount extends Component {
   state = { count: 0 }
 
   incrementCount = () => {
@@ -13,9 +13,7 @@ export default class ClickCounter extends Component {
     const { count } = this.state
     return (
       <div>
-        <button onClick={this.incrementCount}>
-          Increse Value No. : {count}
-        </button>
+        <h1 onMouseOver={this.incrementCount}>Hover {count} value</h1>
       </div>
     )
   }
