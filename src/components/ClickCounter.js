@@ -1,5 +1,4 @@
 import React from 'react'
-import withCounter from './HOC/withCounter'
 
 function ClickCounter ({ count, incrementCount }) {
   return (
@@ -11,4 +10,4 @@ function ClickCounter ({ count, incrementCount }) {
   )
 }
 
-export default withCounter(ClickCounter)
+export default ClickCounter
