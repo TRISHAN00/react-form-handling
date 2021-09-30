@@ -1,5 +1,4 @@
 import React from 'react'
-import withCount from './HOC/withCount'
 
 function HoverCounter ({ count, incrementCount }) {
   return (
@@ -9,4 +8,4 @@ function HoverCounter ({ count, incrementCount }) {
   )
 }
 
-export default withCount(HoverCounter)
+export default HoverCounter

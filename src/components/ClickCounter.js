@@ -1,10 +1,12 @@
 import React from 'react'
-import withCount from './HOC/withCount'
 
-function ClickCounter ({ count, incrementCount }) {
+function ClickCounter ({ count, incrementCount, theme }) {
+  const style =
+    theme === 'dark' ? { backgroundColor: '#000000', color: '#fff' } : null
+
   return (
     <div>
-      <h1>count value is : {count}</h1>
+      <h1 style={style}>count value is : {count}</h1>
       <button onClick={incrementCount} type='button'>
         click
       </button>
@@ -12,4 +14,4 @@ function ClickCounter ({ count, incrementCount }) {
   )
 }
 
-export default withCount(ClickCounter)
+export default ClickCounter
