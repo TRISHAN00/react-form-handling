@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function withCounter (OriginalComponent) {
-  class NewComponent extends React.Component {
+export default function withCount (OriginalComponent) {
+  class NewComponent extends Component {
     state = { count: 0 }
 
     incrementCount = () => {
