@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ThemeContext from './components/contexts/themeContext'
 import Counter from './components/Counter'
 import HoverCounter from './components/HoverCounter'
 import Section from './components/Section'
@@ -15,7 +16,9 @@ export default class App extends Component {
             <HoverCounter count={count} incrementCount={incrementCount} />
           )}
         </Counter>
-        <Section theme={theme} />
+        <ThemeContext.Provider value={{ theme: theme }}>
+          <Section />
+        </ThemeContext.Provider>
       </div>
     )
   }
