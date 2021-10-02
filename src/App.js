@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
-import ClickCounter from './components/ClickCounter'
-import HoverCounter from './components/HoverCounter'
+import ClickComponent from './components/ClickComponent'
+import Counter from './components/Counter'
+import Section from './components/Section'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ClickCounter />
-        <HoverCounter />
+        <Counter>
+          {(count, incremenetCount) => (
+            <ClickComponent count={count} incremenetCount={incremenetCount} />
+          )}
+        </Counter>
+        <Section />
       </div>
     )
   }
