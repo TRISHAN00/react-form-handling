@@ -1,10 +1,10 @@
 import React from 'react'
-import TitleDescription from './components/TitleDescription'
+import Counter from './components/Counter'
 
 function App () {
   return (
     <div>
-      <TitleDescription />
+      <Counter />
     </div>
   )
 }
