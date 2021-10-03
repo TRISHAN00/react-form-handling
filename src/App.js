@@ -1,10 +1,10 @@
 import React from 'react'
-import TodoClass from './components/TodoClass'
+import TodoHook from './components/TodoHook'
 
 function App () {
   return (
     <div>
-      <TodoClass />
+      <TodoHook />
     </div>
   )
 }
