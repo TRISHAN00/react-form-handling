@@ -1,10 +1,10 @@
 import React from 'react'
-import Counter from './components/Counter'
+import TodoClass from './components/TodoClass'
 
 function App () {
   return (
     <div>
-      <Counter />
+      <TodoClass />
     </div>
   )
 }
