@@ -9,10 +9,24 @@ export default class MyComponentClass extends Component {
   componentDidMount () {
     const { count } = this.state
     document.title = `clicked ${count} time`
+    setInterval(this.tick, 1000)
+  }
+
+  componentDidUpdate () {
+    const { count } = this.state
+    document.title = `clicked ${count} time`
   }
 
   addClick = () => {
-    this.setState(count => ({ count: count + 1 }))
+    this.setState(({ count }) => ({
+      count: count + 1
+    }))
+  }
+
+  tick = () => {
+    this.setState({
+      date: new Date()
+    })
   }
 
   render () {
