@@ -1,11 +1,13 @@
 import React from 'react'
-import MyComponentClass from './components/MyComponentClass'
+import MyComponent from './components/MyComponent'
 
 function App () {
   return (
     <div className='app'>
       <h1>Wes shall lear useEffect() today</h1>
-      <MyComponentClass />
+      {/* <MyComponentClass /> */}
+      <hr />
+      <MyComponent />
     </div>
   )
 }
