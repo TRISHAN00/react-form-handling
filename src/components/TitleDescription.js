@@ -11,8 +11,10 @@ function TitleDescription () {
       <h2>{title}</h2>
       <input
         type='text'
+        value={title}
         onChange={e => {
           setTodo({
+            ...todo,
             title: e.target.value
           })
         }}
@@ -20,8 +22,10 @@ function TitleDescription () {
       <br />
       <br />
       <textarea
+        value={description}
         onChange={e => {
           setTodo({
+            ...todo,
             description: e.target.value
           })
         }}
