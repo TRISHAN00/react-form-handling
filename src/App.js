@@ -1,10 +1,10 @@
 import React from 'react'
-import TodoHook from './components/TodoHook'
+import TitleDescription from './components/TitleDescription'
 
 function App () {
   return (
     <div>
-      <TodoHook />
+      <TitleDescription />
     </div>
   )
 }
