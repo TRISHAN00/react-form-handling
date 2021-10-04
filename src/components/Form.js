@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 function Form () {
+  const inputRef = useRef()
+  useEffect(() => {
+    // document loaded
+    console.log(inputRef.current)
+  }, [])
   return (
     <div>
       <p>
-        <input type='text' placeholder='enter something' />
+        <input ref={inputRef} type='text' placeholder='enter something' />
       </p>
     </div>
   )
