@@ -4,7 +4,7 @@ function Form () {
   const inputRef = useRef()
   useEffect(() => {
     // document loaded
-    console.log(inputRef.current)
+    inputRef.current.focus()
   }, [])
   return (
     <div>
