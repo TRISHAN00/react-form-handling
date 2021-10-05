@@ -1,10 +1,10 @@
 import React from 'react'
-import Clock from './components/Clock'
+import CounterReducer from './components/useReducer/CounterReducer'
 
 function App () {
   return (
     <div className='app'>
-      <Clock />
+      <CounterReducer />
     </div>
   )
 }
