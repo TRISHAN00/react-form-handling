@@ -1,10 +1,10 @@
 import React from 'react'
-import UseReducerThree from './components/useReducer/UseReducerThree'
+import UseReducerContext from './components/useReducer/UseReducerContext'
 
 function App () {
   return (
     <div className='app'>
-      <UseReducerThree />
+      <UseReducerContext />
     </div>
   )
 }
