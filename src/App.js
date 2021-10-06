@@ -1,10 +1,10 @@
 import React from 'react'
-import CounterReducer from './components/useReducer/CounterReducer'
+import ComplexCounter from './components/useReducer/ComplexCounter'
 
 function App () {
   return (
     <div className='app'>
-      <CounterReducer />
+      <ComplexCounter />
     </div>
   )
 }
