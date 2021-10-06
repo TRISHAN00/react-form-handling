@@ -1,10 +1,10 @@
 import React from 'react'
-import ComplexCounter from './components/useReducer/ComplexCounter'
+import UseReducerThree from './components/useReducer/UseReducerThree'
 
 function App () {
   return (
     <div className='app'>
-      <ComplexCounter />
+      <UseReducerThree />
     </div>
   )
 }
