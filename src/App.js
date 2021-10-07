@@ -1,10 +1,10 @@
 import React from 'react'
-import UseReducerContext from './components/useReducer/UseReducerContext'
+import GetPost from './components/GetPost'
 
 function App () {
   return (
     <div className='app'>
-      <UseReducerContext />
+      <GetPost />
     </div>
   )
 }
